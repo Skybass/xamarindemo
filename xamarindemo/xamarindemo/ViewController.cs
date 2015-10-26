@@ -21,6 +21,11 @@ namespace xamarindemo
 			base.DidReceiveMemoryWarning ();
 			// Release any cached data, images, etc that aren't in use.
 		}
+
+		partial void dateButton_TouchUpInside (UIButton sender)
+		{
+			dateLabel.Text = DateTime.Now.ToString("dd.MM.yy H:mm:ss");
+		}
 	}
 }
 
